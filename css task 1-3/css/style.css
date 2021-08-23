@@ -37,7 +37,7 @@ body {
   font-family: Montserrat;
   font-size: 40px;
   font-weight: 700;
-  color: #95e1d3;
+  color: #fff;
   position: relative;
   display: inline-block;
   white-space: nowrap;
@@ -85,13 +85,40 @@ nav div ul ul li {
   margin-top: 15px;
 }
 
+.navigation {
+  position: fixed;
+  top: 0;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+nav {
+  background-color: #95e1d3;
+  z-index: 50;
+}
+
+section {
+  margin-top: 150px;
+}
+
+footer {
+  position: inherit;
+}
+
 .navigation-item a {
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
-  color: #95e1d3;
+  color: #ffffff;
   text-transform: uppercase;
   transition: linear 200ms;
+}
+
+.navigation-drop a {
+  color: #95e1d3;
 }
 
 .navigation-link::after {
@@ -120,6 +147,7 @@ nav div ul ul li {
 
 .navigation-bar {
   width: 490px;
+  margin-right: 445px;
 }
 
 .navigation {
@@ -379,6 +407,6 @@ tr:nth-child(even) {
     margin-top: 100px;
   }
   .footer-container {
-    margin-top: 300%;
+    margin-top: 160%;
   }
 }
